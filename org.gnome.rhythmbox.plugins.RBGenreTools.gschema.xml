@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+<schema id="org.gnome.rhythmbox.plugins.RBGenreTools" path="/org/gnome/rhythmbox/plugins/RBGenreTools/">
+
+<key name="delimiter" type="s">
+<default>' - '</default>
+<summary>delimiter for the genre tree</summary>
+<description>delimiter for the genre tree</description>
+</key>
+
+<key name="show-tree" type="b">
+<default>true</default>
+<summary>Whether to display the genre tree window</summary>
+<description>If enabled then the genre tree window will be displayed</description>
+</key>
+
+<key name="tree-position-left" type="b">
+<default>false</default>
+<summary>Display the genre tree on the left</summary>
+<description>Display the genre tree on the left instead of the default right</description>
+</key>
+
+<key name="ql-right" type="b">
+<default>false</default>
+<summary>Display quick links on the right</summary>
+<description>Display the quick links on the right instead of the default left</description>
+</key>
+
+<key name="show-tools" type="b">
+<default>true</default>
+<summary>Whether to display the queue tools</summary>
+<description>If enabled then the tools panel will be displayed</description>
+</key>
+
+<key name="show-quicklinks" type="b">
+<default>true</default>
+<summary>Whether to display the quicklink window</summary>
+<description>If enabled then the quicklink window will be displayed giving 'quick link' access to grouped genres</description>
+</key>
+
+<key name="show-filter" type="b">
+<default>true</default>
+<summary>Whether to display the filter</summary>
+<description>If enabled then the filter select menu will be enabled</description>
+</key>
+
+<key name="filter" type="i">
+<default>0</default>
+<summary>Whether to filter the genre tree</summary>
+<description>If set to 0 then all genres are shown, 1 only those in the filter list, 2 those not in the filter list</description>
+</key>
+
+
+<key name="parse-genres" type="b">
+<default>true</default>
+<summary>Whether to parse genres</summary>
+<description>If enabled then genres will be displayed as a tree according to delimiter setting</description>
+</key>
+
+
+
+
+<key name="scanning-order" type="as">
+<default>['Lyricwiki.org', 'Letras.terra.com.br', 'Vagalume.com.br', 'Metrolyrics.com', 'AZLyrics.com', 'Lyricsnmusic.com', 'Lyricsmania.com', 'Rapgenius.com', 'Darklyrics.com', 'Chartlyrics.com', 'Leoslyrics.com', 'Lyrdb.com', 'External']</default>
+<summary>Sources are scanned in this order</summary>
+<description>Possible values are: 'Lyricwiki.org', 'Letras.terra.com.br', 'Metrolyrics.com', 'AZLyrics.com', 'Lyricsnmusic.com', 'Lyricsmania.com', 'Vagalume.com.br', 'Rapgenius.com', 'Darklyrics.com', 'Chartlyrics.com', 'Leoslyrics.com', 'Lyrdb.com', 'External'</description>
+</key>
+
+</schema>
+</schemalist>
