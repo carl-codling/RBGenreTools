@@ -3,7 +3,7 @@ USER_PLUGIN_DIR = ~/.local/share/rhythmbox/plugins/
 SYSTEM_PLUGIN_DIR = /usr/lib/rhythmbox/plugins/
 SYSTEM64_PLUGIN_DIR = /usr/lib64/rhythmbox/plugins/
 
-install: schema locales
+install: schema
 	@echo "Installing plugin files to $(USER_PLUGIN_DIR) ..."
 	@mkdir -p $(USER_PLUGIN_DIR)
 	@rm -r -f $(USER_PLUGIN_DIR)RBGenreTools/
@@ -17,15 +17,29 @@ install: schema locales
 	@cp ./quicklinks.json $(USER_PLUGIN_DIR)
 	@echo "Done!"
 
-install-systemwide: schema locales
+install-systemwide: schema
 	@if [ -d "$(SYSTEM_PLUGIN_DIR)rb" ]; then \
 		echo "Installing plugin files to $(SYSTEM_PLUGIN_DIR) ..."; \
 		sudo rm -r -f $(SYSTEM_PLUGIN_DIR)RBGenreTools/; \
-		sudo cp -r ./RBGenreTools/ $(SYSTEM_PLUGIN_DIR); \
+		sudo cp ./RBGenreTools.plugin $(USER_PLUGIN_DIR); \
+		sudo cp ./RBGenreTools.py $(USER_PLUGIN_DIR); \
+		sudo cp ./RBGenreToolsQLToolsMenu.py $(USER_PLUGIN_DIR); \
+		sudo cp ./RBGenreToolsQueueToolsMenu.py $(USER_PLUGIN_DIR); \
+		sudo cp ./RBGenreToolsQuicklinks.py $(USER_PLUGIN_DIR); \
+		sudo cp ./RBGenreToolsTree.py $(USER_PLUGIN_DIR); \
+		sudo cp ./ConfigDialog.py $(USER_PLUGIN_DIR); \
+		sudo cp ./quicklinks.json $(USER_PLUGIN_DIR); \
 	else \
 		echo "Installing plugin files to $(SYSTEM64_PLUGIN_DIR) ..."; \
 		sudo rm -r -f $(SYSTEM64_PLUGIN_DIR)RBGenreTools/; \
-		sudo cp -r ./RBGenreTools/ $(SYSTEM64_PLUGIN_DIR); \
+		sudo cp ./RBGenreTools.plugin $(SYSTEM64_PLUGIN_DIR); \
+		sudo cp ./RBGenreTools.py $(SYSTEM64_PLUGIN_DIR); \
+		sudo cp ./RBGenreToolsQLToolsMenu.py $(SYSTEM64_PLUGIN_DIR); \
+		sudo cp ./RBGenreToolsQueueToolsMenu.py $(SYSTEM64_PLUGIN_DIR); \
+		sudo cp ./RBGenreToolsQuicklinks.py $(SYSTEM64_PLUGIN_DIR); \
+		sudo cp ./RBGenreToolsTree.py $(SYSTEM64_PLUGIN_DIR); \
+		sudo cp ./ConfigDialog.py $(SYSTEM64_PLUGIN_DIR); \
+		sudo cp ./quicklinks.json $(SYSTEM64_PLUGIN_DIR); \
 	fi
 	@echo "Done!"#
 
