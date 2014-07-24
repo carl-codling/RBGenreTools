@@ -29,11 +29,11 @@ class RBGenreToolsTree(Gtk.ScrolledWindow):
 		
 		self._SG = _SG	
 		self.settings = _SG.settings
-		self.uimanager = self.create_ui_manager()
-		action_group = Gtk.ActionGroup("my_actions")
-		self.add_actions(action_group)
-		self.uimanager.insert_action_group(action_group)
-		self.popup = self.uimanager.get_widget("/PopupMenu")
+		#self.uimanager = self.create_ui_manager()
+		#action_group = Gtk.ActionGroup("my_actions")
+		#self.add_actions(action_group)
+		#self.uimanager.insert_action_group(action_group)
+		#self.popup = self.uimanager.get_widget("/PopupMenu")
 		
 		self.current_editable = None
 		
