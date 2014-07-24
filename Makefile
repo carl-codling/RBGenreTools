@@ -14,6 +14,7 @@ install: schema locales
 	@cp ./RBGenreToolsQuicklinks.py $(USER_PLUGIN_DIR)
 	@cp ./RBGenreToolsTree.py $(USER_PLUGIN_DIR)
 	@cp ./ConfigDialog.py $(USER_PLUGIN_DIR)
+	@cp ./quicklinks.json $(USER_PLUGIN_DIR)
 	@echo "Done!"
 
 install-systemwide: schema locales
