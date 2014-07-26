@@ -11,9 +11,11 @@ The tree view displays a nested menu of the genres in rhythmbox's database. The 
   - Rave:
       - Jungle
 
-Obviously building an effective tree menu will involve extensive renaming of the genre tags in all your song files and I'd recommend only undertaking the task if you're prepared to spend a few days or more at it (if not you may still want to check out the quick links option below). I likely spent the best part of a week working through around 150GB of files! There is however a drag and drop feature that allows you to drop songs on to the tree. Caution should be taken during the renaming process to not overload rhythmbox with too much to do too quickly, every file you rename has to be opened and the tags edited. I found working through album by album to be effective. 
+Obviously building an effective tree menu will involve extensive renaming of the genre tags in all your song files and I'd recommend only undertaking the task if you're prepared to spend a few days or more at it (if not you may still want to check out the quick links option below). I likely spent the best part of a week working through around 150GB of files! There is however a drag and drop feature that allows you to drop songs on to the tree. __Caution__ _should be taken during the renaming process to not overload rhythmbox with too much to do too quickly, every file you rename has to be opened and the tags edited. I found working through album by album to be effective._ 
 
-At time of writing you need to create a new genre using rhythmbox's native "properties" window (right click on a song and select Properties). By creating lower level genres first you bypass having to create the higher level ones though. So as in the pevious example there would be no need to create the higher level genres "Dance Music - Rave" and "Dance Music" after having created "Dance Music - Rave - Jungle", once it's there you can just drag and drop any other files on to any of the 3 new tree items.
+At time of writing you need to create a new genre using rhythmbox's native "properties" window (right click on a song and select Properties). By creating lower level genres first you bypass having to create the higher level ones though. So as in the pevious example there would be no need to create the higher level genres "Dance Music - Rave" and "Dance Music" after having created "Dance Music - Rave - Jungle", once it's there you can just __drag and drop__ any other files on to any of the 3 new tree items.
+
+__Queue Random Selection__
 
 Above the genre tree there is also a tool to queue a random selection of songs from the current selection based on either the number of songs or approx. play time.
 
