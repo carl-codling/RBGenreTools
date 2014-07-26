@@ -1,7 +1,7 @@
 RBGenreTools - Rhythmbox Plugin
 ===============================
 
-This plugin adds 2 optional (enabled and disabled from the main plugin preferences page) panels to rhythmbox: the "genre tree view" and "quick links" panels. It was basically written because I wanted a more effective way to order and view my music collection based on the genre.
+This plugin adds 2 optional (enabled and disabled from the main plugin preferences page) panels to rhythmbox: the [genre tree view](https://github.com/carl-codling/RBGenreTools/blob/master/README.md#the-genre-tree-view) and [quick links](https://github.com/carl-codling/RBGenreTools/blob/master/README.md#quick-links) panels. It was basically written because I wanted a more effective way to order and view my music collection based on the genre.
 
 The Genre Tree View
 -------------------
