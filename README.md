@@ -1,3 +1,6 @@
+** This project has not been followed or maintained for a few years now, I simply leave the code here for archival purposes **
+-----------------------------------------------------------------------------------------------------------------------------
+
 RBGenreTools - Rhythmbox Plugin
 ===============================
 
